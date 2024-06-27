@@ -1,0 +1,1 @@
+In this Project, using React Props and Tailwind css

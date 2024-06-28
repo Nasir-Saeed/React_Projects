@@ -1,24 +1,14 @@
+import Card from "./components/Card";
+
 function App() {
   return (
     <>
-      <h2>React Props</h2>
-      {/* <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains" />
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-          <p class="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-          </p>
-        </div>
-        <div class="px-6 pt-4 pb-2">
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-        </div>
-      </div> */}
-      <button class="btn btn-blue">
-        Button
-      </button>
+      <h2 className="text-white text-center text-4xl mt-20">React Props</h2>
+      <div className='flex justify-center mt-8'>
+        <Card cardName="Progressive Web App Development" cardPara="Reach anyone with native like install ability and capabilities with our progressive web app development services. Our single codebase can create a seamless web app no matter where you are and which device you have." />
+        <Card cardName="Android App Development" cardPara="Tech is about efficiency, innovation, and developing premium Android apps that work seamlessly on every device. With the help of Google SDKs and android development tools (such as Dagger 2, Gradle, and Java), our experts can make anything possible." />
+        <Card cardName="Software Quality Testing" cardPara="Do you think the first rocket by NASA was perfect enough to shoot into space? Our experts love uncovering opportunities to improve the mobile app and add to the customer experience using a series of quality software tests and metrics." />
+      </div>
     </>
 
   );

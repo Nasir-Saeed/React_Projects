@@ -1,4 +1,4 @@
 # React Counter App
 
-### Project Link: [text](https://react-counters-application.netlify.app/)
+### Project Link: [https://react-counters-application.netlify.app/](https://react-counters-application.netlify.app/)
 

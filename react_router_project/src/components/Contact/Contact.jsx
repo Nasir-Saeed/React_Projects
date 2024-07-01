@@ -38,7 +38,7 @@ export default function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    Acme Inc, Street, State, Postal Code
+                                    Karachi, Pakistan
                                 </div>
                             </div>
 
@@ -60,7 +60,7 @@ export default function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    +44 1234567890
+                                    +9203099865652
                                 </div>
                             </div>
 
@@ -82,7 +82,7 @@ export default function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    info@acme.org
+                                    saeednasir222@gmail.com
                                 </div>
                             </div>
                         </div>
@@ -129,7 +129,7 @@ export default function Contact() {
 
                             <button
                                 type="submit"
-                                className="md:w-32 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"
+                                className="md:w-32 bg-sky-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"
                             >
                                 Submit
                             </button>

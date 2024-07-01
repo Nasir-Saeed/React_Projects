@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import logo from './img/logo-2.png'
+
 
 export default function Footer() {
     return (
@@ -9,8 +11,8 @@ export default function Footer() {
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
-                                src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-                                className="mr-3 h-16"
+                                src={logo}
+                                className="mr-3 h-17"
                                 alt="Logo"
                             />
                         </Link>
@@ -36,7 +38,7 @@ export default function Footer() {
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
                                     <a
-                                        href="https://github.com/hiteshchoudhary"
+                                        href="https://github.com/nasir-saeed"
                                         className="hover:underline"
                                         target="_blank"
                                         rel="noreferrer"
@@ -71,14 +73,14 @@ export default function Footer() {
                 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-gray-500 sm:text-center">
-                        © 2023
-                        <a href="https://hiteshchoudhary.com/" className="hover:underline">
-                            hiteshchoudhary
+                        © 2024 
+                        <a href="https://github.com/nasir-saeed" className="hover:underline">
+                            Nasir Saeed
                         </a>
                         . All Rights Reserved.
                     </span>
                     <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-                        <Link to="#" className="text-gray-500 hover:text-gray-900">
+                        <Link to="https://www.facebook.com/people/Nasir-Saeed/100090316869287/?mibextid=ZbWKwL" className="text-gray-500 hover:text-gray-900">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -94,7 +96,7 @@ export default function Footer() {
                             </svg>
                             <span className="sr-only">Facebook page</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="https://www.linkedin.com/in/nasir-saeed-0261aa1ba" className="text-gray-500">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -106,7 +108,7 @@ export default function Footer() {
                             </svg>
                             <span className="sr-only">Discord community</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="https://www.linkedin.com/in/nasir-saeed-0261aa1ba" className="text-gray-500">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -138,7 +140,7 @@ export default function Footer() {
                             </svg>
                             <span className="sr-only">GitHub account</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="https://www.linkedin.com/in/nasir-saeed-0261aa1ba" className="text-gray-500">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"

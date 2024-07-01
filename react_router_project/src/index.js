@@ -6,7 +6,8 @@ import Layout from './Layout';
 import { Home } from './components';
 import { About } from './components';
 import { Contact } from './components';
-import { Github } from './components';
+import Github , { gitHubInfoLoader } from './components/Github/Github';
+import { User } from './components';
 
 // First Method To Create Routes
 
@@ -43,7 +44,8 @@ const router = createBrowserRouter(
       <Route path='' element={<Home />} />
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
-      <Route path='github' element={<Github />} />
+      <Route path='github' element={<Github />} loader={gitHubInfoLoader}/>
+      <Route path='user/:id' element={<User />} />
     </Route>
   )
 )

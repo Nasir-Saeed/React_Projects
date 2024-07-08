@@ -1,10 +1,11 @@
-import conf from '../conf/conf'
-import { Client, Account, ID } from "appwrite";
+import conf from "../conf/conf"
+import { Client, Account, ID } from "appwrite"
+
 
 export class AuthService {
+
     client = new Client();
     account;
-
     constructor() {
         this.client
             .setEndpoint(conf.appWriteUrl)
@@ -14,43 +15,40 @@ export class AuthService {
 
     async createAccount({ email, password, name }) {
         try {
-            const userAccount = await this.account.create(ID.unique(), email, password, name)
+            const userAccount = await this.account.create(ID.unique(), email, password, name);
             if (userAccount) {
-                return this.logIn({ email, password })
+                return this.login({ email, password })
             } else {
-                return userAccount
+                return userAccount;
             }
         } catch (error) {
             throw error
         }
     }
-
-    async logIn({ email, password }) {
+    async login({ email, password }) {
         try {
             return await this.account.createEmailPasswordSession(email, password)
         } catch (error) {
-            throw error;
+            throw error
         }
     }
-
     async getCurrentUser() {
         try {
             return await this.account.get()
         } catch (error) {
-            console.log("Appwrite service :: getCurrent User :: error", error)
+            console.log("Appwrite Service :: getCurrentUser :: error", error)
         }
-        return null;
-    }
 
+        return null
+    }
     async logOut() {
         try {
             return await this.account.deleteSessions()
         } catch (error) {
-            console.log("Appwrite service :: Logout User :: error", error)
+            console.log("Appwrite Service :: logOut :: error", error)
         }
     }
 }
 
-export const authservice = new AuthService()
-
-export default authservice
+export const authService = new AuthService()
+export default authService;

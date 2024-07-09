@@ -134,5 +134,5 @@ export class Service {
 
 }
 
-export const newservice = new Service()
-export default newservice
+export const service = new Service()
+export default service

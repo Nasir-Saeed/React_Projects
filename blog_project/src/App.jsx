@@ -12,9 +12,9 @@ function App() {
     authService.getCurrentUser()
       .then((userData) => {
         if (userData) {
-          dispatch(login(userData))
+          dispatch(login({userData}))
         } else {
-          dispatch(logout(userData))
+          dispatch(logout({userData}))
         }
       })
       .finally(() => { setLoading(false) })

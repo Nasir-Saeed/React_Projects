@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Footer, Header } from "./components";
 import { useDispatch } from 'react-redux'
 import authService from "./appwrite/auth";

@@ -1,0 +1,25 @@
+.alignSet {
+    align-items: center;
+    justify-content: center;
+    display: flex !important;
+}
+
+.highlight {
+    border: 2px solid #ff9800 !important;
+    /* Orange border to highlight */
+    background-color: #fff3e0 !important;
+    /* Light orange background to highlight */
+}
+
+.action {
+    display: flex;
+    gap: 10px;
+}
+
+/* textarea.form-control {
+    width: 100%;       
+    resize: vertical;  
+    padding: 8px;      
+    border-radius: 4px; 
+    font-size: 16px;    
+} */
